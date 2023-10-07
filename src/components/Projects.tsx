@@ -1,0 +1,38 @@
+import React from 'react'
+import { motion } from 'framer-motion'
+import Image from 'next/image'
+import Project from './Project'
+
+type Props = {}
+
+function Projects({}: Props) {
+  return (
+    <motion.div 
+        initial={{ opacity: 0 }}
+        whileInView={{ opacity: 1 }}
+        transition={{ duration: 1.5 }}
+        className='h-screen flex relative overflow-hidden flex-col text-center md:text-left md:flex-row max-w-80 xl:px-5 min-h-screen justify-center xl:space-y-0 mx-auto items-center'
+    >
+        <h3 className='absolute top-24 uppercase tracking-[20px] text-gray-500 text-2xl'>
+            Projects
+        </h3>
+
+        <div className='relative w-full flex overflow-x-scroll overflow-y-hidden snap-x snap-mandatory z-20 scrollbar scrollbar-track-gray-400/20 scrollbar-thumb-[#94160d]/60'>
+            <Project title='Percpetion and Localisation of a racing car' skills={['/images/Logo/ros2.png', '/images/Logo/linux.png', '/images/Logo/gazebo.png', '/images/Logo/c++.png', '/images/Logo/python.png']} image='/images/Projects/gazebo.png' description='Ce projet a pour but de concevoir le système de reconnaissance de l&apos;environnement d&apos;une voiture autonome pour la compétition Formula Student. Il utilise le simulateur de physique Gazebo et vise principalement à concevoir un circuit pour l&apos;ordinateur de bord en utilisant une caméra stéréo et un lidar. Le but est de permettre à la voiture de détecter et de comprendre les obstacles et les éléments de son environnement pour naviguer en toute sécurité. Au final ce circuit est envoyé à l&apos;équipe de génération de trajectoire puis à l&apos;équipe qui s&apos;occupe du hardware.' />
+            <Project title='Site web d&apos;association' skills={['/images/Logo/React.png', '/images/Logo/css.svg']} image='/images/Projects/TeamPage.png' description='Ce projet, réalisé en collaboration avec une association de Formula Student (une compétition étudiante de voitures), a pour but de concevoir un site vitrine. Ce site, réalisé en React, présentera l&apos;équipe, les compétitions, la voiture, etc. Il a été réalisé car je fais partie de l&apos;équipe RSI de cette association.' />
+            <Project title='Commande vocal Arduino' skills={['/images/Logo/arduino.png', '/images/Logo/github.png']} image='/images/Projects/micro+ampli.jpeg' description='Notre projet étudiant vise à concevoir un appareil de reconnaissance vocale utilisant un Arduino. Il permettra de contrôler 3 LED en utilisant des commandes vocales prédéfinies ou de les éteindre d&apos;un clap des mains.' />
+            <Project title='Cardiofréquencemètre' skills={['/images/Logo/arduino.png', '/images/Logo/github.png']} image='/images/Projects/cardio1.jpeg' description='Notre projet visait à concevoir un capteur cardiaque utilisant un Arduino. Ce capteur enregistrera les battements cardiaques de l&apos;utilisateur et les affichera sur un écran OLED incorporé. Il comprend également un système d&apos;affichage de l&apos;heure et de sauvegarde des données enregistrées dans la mémoire interne de l&apos;Arduino.' />
+            <Project title='Serveur Home Assistant' skills={['/images/Logo/hass.png', '/images/Logo/pi.png', '/images/Logo/docker.png']} image='/images/Projects/rasp3.png' description='Ce projet a pour but de créer un serveur Homeassistant pour connecter tous mes appareils entre eux et pourvoir en concevoir de nouveaux par moi-même. Ce serveur est pour l&apos;instant dans une raspberry pi 3b, cependant je suis en train de changer les choses et de préparer un serveur unraid ou il sera stocker dans un docker.' />
+            <Project title='LED mqtt' skills={['/images/Logo/mqtt.png', '/images/Logo/esp32.jpg', '/images/Logo/hass.png']} image='/images/Projects/mqttDoctorStrange.png' description='Ce projet a pour but de connecter des LED via le protocole MQTT en utilisant la bibliothèque FastLED. J&apos;utilise MQTT, un protocole de messagerie léger, pour permettre la communication entre les LED et un serveur Homeassisatnt. J&apos;ai utilisé un contrôleur Wemos D1 Mini pour connecter les LED et pour gérer la communication MQTT. Ce projet nous a permis de développer mes compétences en matière de développement de systèmes embarqués, en utilisant des protocoles de communication tels que MQTT et en utilisant des bibliothèques pour contrôler des périphériques matériels tels que des LED.' />
+            <Project title='Jeu de société en C' skills={['/images/Logo/c.png', '/images/Logo/github.png']} image='/images/Projects/Game.png' description='Ce projet consistait à créer une version en ligne de commande du jeu Quoridor en utilisant le langage C. Le jeu se déroulera dans le terminal, et nous utiliserons les fonctions de terminal pour créer une interface utilisateur graphique. Le jeu permettra à deux joueurs de s&apos;affronter en utilisant des "murs" pour bloquer le passage de l&apos;adversaire, mais il sera également possible de jouer seul contre une intelligence artificielle (IA) développée par nos soins. Nous avons implémenté une logique de jeu solide pour gérer les règles et les conditions de victoire, et nous avons également inclus des fonctionnalités telles que la sauvegarde et la reprise de partie.' />
+            <Project title='ESP32 cam' skills={['/images/Logo/hass.png']} image='/images/Projects/esp32_cam.png' description='Ce projet a pour but de concevoir le système de reconnaissance de l&apos;environnement d&apos;une voiture autonome pour la compétition Formula Student. Il utilise le simulateur de physique Gazebo et vise principalement à concevoir un circuit pour l&apos;ordinateur de bord en utilisant une caméra stéréo et un lidar. Le but est de permettre à la voiture de détecter et de comprendre les obstacles et les éléments de son environnement pour naviguer en toute sécurité. Au final ce circuit est envoyé à l&apos;équipe de génération de trajectoire puis à l&apos;équipe qui s&apos;occupe du hardware.' />
+            <Project title='Manette de drone' skills={['/images/Logo/arduino.png', '/images/Logo/kicad.png', '/images/Logo/fusion.png', '/images/Logo/github.png']} image='/images/Projects/3dModel.JPG' description='Notre projet étudiant est une manette de drone conçue pour être utilisée avec un microcontrôleur ATmega328P. Nous avons utilisé un module NRF24 pour la communication entre la manette et le drone, permettant une transmission de données fiable et à faible consommation d&apos;énergie. La manette comprend des joysticks pour les commandes de mouvement, ainsi qu&apos;un écran OLED pour afficher les informations de vol en temps réel. Ce projet nous a permis de développer nos compétences en matière de programmation embarquée et de conception électronique, ainsi que d&apos;apprendre à travailler avec des modules de communication sans fil.' />
+            <Project title='Site web d&apos;une salle de gym (fictive)' skills={['/images/Logo/html.png', '/images/Logo/css.svg', '/images/Logo/github.png']} image='/images/Projects/Messagerie.png' description='Notre projet étudiant est un site web pour une salle de sport qui permet aux utilisateurs de consulter les horaires des cours, les tarifs d&apos;abonnement et les services proposés. Nous avons utilisé HTML et CSS pour créer l&apos;apparence visuelle du site et PHP pour la gestion des données via une base de données. Nous avons également inclus des fonctionnalités de messagerie pour permettre aux utilisateurs de communiquer directement avec les instructeurs et les administrateurs de la salle de sport.' />
+        </div>
+
+        <div className='w-full absolute top-[30%] bg-[#94160d]/10 left-0 h-[500px] -skew-y-12' />
+    </motion.div>
+  )
+}
+
+export default Projects
