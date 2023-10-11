@@ -8,7 +8,7 @@ type Props = {}
 
 export default function Hero({}: Props) {
   const [text, count] = useTypewriter({
-    words: ["Hello, I'm Pierre", "I love IoT"],
+    words: ["Moi c'est Pierre", "J'adore l'IoT"],
     loop: true,
     delaySpeed: 300,
   });
@@ -17,7 +17,7 @@ export default function Hero({}: Props) {
       <BackgroundCircles />
       <Image src='/images/pp.png' alt='profil picture' width={200} height={200} className='rounded-full relative h-32 w-32 mx-auto object-cover select-none' />
       <div className='z-20'>
-        <h2 className='text-sm uppercase text-gay-500 pb-2 tracking-[15px] select-none'> Embedded Systems Engineer</h2>
+        <h2 className='text-sm uppercase text-gay-500 pb-2 tracking-[1rem] select-none'>Ingénieur Systèmes emabrqués</h2>
         <h1 className='text-2xl md:text-5xl lg:text-6xl font-semibold px-10 select-none'>
           <span className='mr-3'>{text}</span>
           <Cursor cursorColor='#94160d' />
@@ -28,10 +28,10 @@ export default function Hero({}: Props) {
             <button className='heroButton'><p className='select-none'>Experience</p></button>
           </Link>
           <Link href='#skills'>
-            <button className='heroButton'><p className='select-none'>Skills</p></button>
+            <button className='heroButton'><p className='select-none'>Compétences</p></button>
           </Link>
           <Link href='#projects'>
-            <button className='heroButton'><p className='select-none'>Projects</p></button>
+            <button className='heroButton'><p className='select-none'>Projets</p></button>
           </Link>
         </div>
       </div>      
