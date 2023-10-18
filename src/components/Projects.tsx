@@ -19,7 +19,7 @@ function Projects({}: Props) {
         </h3>
 
         <div className='relative w-screen overflow-y-hidden z-20'>
-          {/* <Carousel
+          <Carousel
             className="rounded-xl"
             transition={{ duration: 1 }}
             prevArrow={({ handlePrev }) => (
@@ -102,7 +102,7 @@ function Projects({}: Props) {
             <Project title='Testbench' skills={['/images/Logo/python.svg','/images/Logo/django.svg',]} image='/images/Projects/django_scenario.png' description='Ce projet à été réalisé durant mon stage de seconde année. Le but était de concevoir un banc de test pour des cartes électroniques. Il fallait tester ces cartes avant qu&apos;elles ne partent de chez le sous traitants qui fabrique les pcb afin qu&apos;elles arrivent à l&apos;entreprise en état fonctionnel. une première version du banc de test simple à été faite en python avec une interface Tkinter. Puis, dans l&apos;optique d&apos;en faire aussi un banc de non régression, une seconde version à été faite avec Django. Django est un framework python qui permet de se passer du design d&apos;interface et qui intègre une connexion avec une base de donnée pour stocker les résultats des différents tests.' />
             <Project title='3D Printing' skills={['/images/Logo/raspberry.svg','/images/Logo/fusion.png',]} image='/images/Projects/3dprint.png' description='Durant mon stage de seconde année je me suis aussi occupé de réalisé des impressions 3D. Que ce soit des boitier pour le banc de test ou des supports de batterie pour la carte, je les réalisais avec fusion 360 puis les imprimais avec Octoprint. Octoprint était une solution que j&apos;ai proposé afin de faciliter le processus d&apos;impression 3D. Il permet de contrôler l&apos;imprimante même si elle est dans une autre pièce, facilite l&apos;upload des fichiers et muni d&apos;une caméra il permet de suivre l&apos;état de l&apos;impression.' />
             <Project title='Intégration Home Assistant' skills={['/images/Logo/hass.svg',]} image='/images/Projects/hass_integration.png' description='Durant mon stage de seconde année, j&apos;ai été chargé de faire de la veille technologique sur l&apos;intégration des cartes éléctroniques dans un environnement domotique. La première piste à été d&apos;intégrer la carte au travers d&apos;HomeAssistant. Pour ce faire j&apos;ai réalisé une proof of concept d&apos;intégration qui va fetch les données du serveur via un call api, pour ensuite les afficher dans l&apos;interface HomeAssistant. Par la suite je me suis renseigné sur les possibilités d&apos;intégration dans HomeKit ou Google Home.' />
-          </Carousel> */}
+          </Carousel>
         </div>
 
         <div className='w-full absolute top-[30%] bg-[#8B7E7E]/10 left-0 h-[500px] -skew-y-12' />
