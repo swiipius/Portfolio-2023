@@ -17,7 +17,7 @@ function WorkExperience({}: Props) {
             Experiences
         </h3>
         <div className='relative h-screen w-screen overflow-x-hidden z-20'>
-          <Carousel className="rounded-xl"
+          {/* <Carousel className="rounded-xl"
           transition={{ duration: 1 }}
           prevArrow={({ handlePrev }) => (
             <IconButton
@@ -85,7 +85,7 @@ function WorkExperience({}: Props) {
             <ExperienceCard title='Assistant buraliste' company='Tabac Presse de Gron' companyLogo='/images/Logo/Tabac-Presse.png' startDate='janvier 2022' endDate='fevrier 2022' summary={['Vente de marchandises', 'Gestion des stocks', 'Création d\'une application de gestionn de stock pour un article précis', 'Réalisation d\'un compteur/trieur de pièces', 'Réalisation d\'un systèmes pour maintenir les produits le plus avancé possible dans le rack']} skills={['/images/Logo/shortcut.svg', '/images/Logo/html.svg', '/images/Logo/css.svg', '/images/Logo/php.svg', '/images/Logo/arduino.svg']}/>
             <ExperienceCard title='Assistant de TP' company='ECE Paris' companyLogo='/images/Logo/ECE_Paris_Lyon.jpg' startDate='mars 2022' endDate='juillet 2023' summary={['Aide dureant les TP (mentorat)', 'Cours d\'éléctronique', 'Cours de C']} skills={['/images/Logo/arduino.svg', '/images/Logo/kicad.png', '/images/Logo/c.svg', '/images/Logo/html.svg']}/>
             <ExperienceCard title='Préparateur de commande' company='E. Leclerc' companyLogo='/images/Logo/leclerc.png' startDate='juillet 2021' endDate='aout 2022' summary={['Préparation de commandes dans un Leclerc Drive durant 2 étés', 'Gestion des stocks']} skills={[]}/>
-          </Carousel>
+          </Carousel> */}
         </div>
     </motion.div>
   )
