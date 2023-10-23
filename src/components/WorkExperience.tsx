@@ -25,15 +25,15 @@ function WorkExperience({}: Props) {
               color="white"
               size="lg"
               onClick={handlePrev}
-              className="!absolute bottom-4 md:top-2/4 left-4 -translate-y-2/4  flex items-center justify-center rounded-full"
+              className="!absolute top-3/4 md:top-2/4 left-1 md:left-4 -translate-y-2/4  flex items-center justify-center rounded-full"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 fill="none"
                 viewBox="0 0 24 24"
                 strokeWidth={3}
-                stroke="currentColor"
-                className="h-6 w-6"
+                stroke="#94160d"
+                className="h-6 w-6 md:w-16 md:h-16 stroke-[3] md:stroke-[2]"
               >
                 <path
                   strokeLinecap="round"
@@ -49,15 +49,15 @@ function WorkExperience({}: Props) {
               color="white"
               size="lg"
               onClick={handleNext}
-              className="!absolute bottom-4 md:top-2/4 !right-1 -translate-y-2/4 flex items-center justify-center rounded-full"
+              className="!absolute top-3/4 md:top-2/4 !right-1 md:right-4  -translate-y-2/4 flex items-center justify-center rounded-full"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 fill="none"
                 viewBox="0 0 24 24"
                 strokeWidth={3}
-                stroke="currentColor"
-                className="h-6 w-6"
+                stroke="#94160d"
+                className="h-6 w-6 md:w-16 md:h-16 stroke-[3] md:stroke-[2]"
               >
                 <path
                   strokeLinecap="round"
@@ -68,7 +68,7 @@ function WorkExperience({}: Props) {
             </IconButton>
           )}
           navigation={({ setActiveIndex, activeIndex, length }) => (
-            <div className="absolute bottom-10 md:bottom-16 left-2/4 z-50 flex -translate-x-2/4 gap-2">
+            <div className="absolute bottom-14 md:bottom-16 left-2/4 z-50 flex -translate-x-2/4 gap-2">
               {new Array(length).fill("").map((_, i) => (
                 <span
                   key={i}
@@ -81,9 +81,9 @@ function WorkExperience({}: Props) {
             </div>
           )}>
             <ExperienceCard title='Stage 4ème année : Banc de test IoT' company='ECOMESURE' companyLogo='/images/Logo/ecomesure.png' startDate='avril 2023' endDate='aout 2023' summary={['Réalisation d\'un banc de test pour la carte électronique d\'un objet connecté mesurant la qualité de l\'air.', 'Conception d\'un banc de non-régression pour le firmware embarqué dans les objets connectés. Utilisation du framework Django pour la partie graphique et sauvegarde de donnée.', 'Développement d\'une intégration domotique Home Assistant pour les stations qualité de l\'air.', 'Réalisation d\'impression 3D industrielles et installation d\'Octoprint pour pilotage à distance de l\'outil.']} skills={['/images/Logo/python.svg', '/images/Logo/hass.svg', '/images/Logo/linux.svg']}/>
-            <ExperienceCard title='LTO' company='ARECE' companyLogo='/images/Logo/ARECE.svg' startDate='septembre 2022' endDate='Aujourdh&apos;ui' summary={['Réalisation du site internet', 'Prise de décision sur la technologie chez ARECE en collaboration avec CTO', 'Création de projet pour les membres de l\'association', 'Gestion des outils de communications (Google Drive, Discord, Github)', 'Formation et gestion de la team des RSI']} skills={['/images/Logo/github.svg', '/images/Logo/ros.svg']}/>
+            <ExperienceCard title='LTO - Lead Technical Officer' company='ARECE' companyLogo='/images/Logo/ARECE.svg' startDate='septembre 2022' endDate='Aujourdh&apos;ui' summary={['Réalisation du site internet', 'Prise de décision sur la technologie chez ARECE en collaboration avec CTO', 'Création de projet pour les membres de l\'association', 'Gestion des outils de communications (Google Drive, Discord, Github)', 'Formation et gestion de la team des RSI']} skills={['/images/Logo/github.svg', '/images/Logo/ros.svg']}/>
             <ExperienceCard title='Assistant buraliste' company='Tabac Presse de Gron' companyLogo='/images/Logo/Tabac-Presse.png' startDate='janvier 2022' endDate='fevrier 2022' summary={['Vente de marchandises', 'Gestion des stocks', 'Création d\'une application de gestionn de stock pour un article précis', 'Réalisation d\'un compteur/trieur de pièces', 'Réalisation d\'un systèmes pour maintenir les produits le plus avancé possible dans le rack']} skills={['/images/Logo/shortcut.svg', '/images/Logo/html.svg', '/images/Logo/css.svg', '/images/Logo/php.svg', '/images/Logo/arduino.svg']}/>
-            <ExperienceCard title='Assistant de TP' company='ECE Paris' companyLogo='/images/Logo/ECE_Paris_Lyon.jpg' startDate='mars 2022' endDate='juillet 2023' summary={['Aide dureant les TP (mentorat)', 'Cours d\'éléctronique', 'Cours de C']} skills={['/images/Logo/arduino.svg', '/images/Logo/kicad.png', '/images/Logo/c.svg', '/images/Logo/html.svg']}/>
+            <ExperienceCard title='Assistant de TP' company='ECE Paris' companyLogo='/images/Logo/ECE_Paris_Lyon.jpg' startDate='mars 2022' endDate='juillet 2023' summary={['Aide durant les TP (mentorat)', 'Cours d\'éléctronique', 'Cours de C']} skills={['/images/Logo/arduino.svg', '/images/Logo/kicad.png', '/images/Logo/c.svg', '/images/Logo/html.svg']}/>
             <ExperienceCard title='Préparateur de commande' company='E. Leclerc' companyLogo='/images/Logo/leclerc.png' startDate='juillet 2021' endDate='aout 2022' summary={['Préparation de commandes dans un Leclerc Drive durant 2 étés', 'Gestion des stocks']} skills={[]}/>
           </Carousel>
         </div>

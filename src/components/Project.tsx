@@ -10,7 +10,7 @@ type Props = {
 
 function Project({title, image, description, skills}: Props) {
   return (
-    <div className='w-screen flex-shrink-0 snap-center flex flex-col space-y-5 items-center justify-center py-20 px-5 h-screen'>
+    <div className='w-screen flex-shrink-0 snap-center flex flex-col space-y-5 items-center justify-center py-20 px-10 h-screen'>
         <Image src={image} alt='' width={500} height={500} className='max-h-36 md:max-h-52 object-contain' />
         <div className='space-y-5 px-0 md:px-10 max-w-6xl'>
             <h4 className='md:text-4xl font-semibold text-center'>

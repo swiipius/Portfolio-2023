@@ -16,7 +16,7 @@ function Skills({}: Props) {
             Compétences
         </h3>
         <h3 className='top-36 uppercase tracking-[3px] text-gray-500 text-sm absolute'>
-            Survolez une compétence pour connaître son niveau actuel
+            Survolez une compétence pour connaître mon niveau actuel
         </h3>
 
         <div className='grid md:grid-cols-6 grid-cols-4 gap-5 mx-5'>

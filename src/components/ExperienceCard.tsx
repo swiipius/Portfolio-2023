@@ -13,7 +13,7 @@ type Props = {
 
 function ExperienceCard({title, company, companyLogo, startDate, endDate, summary, skills}: Props) {
   return (
-    <div className='w-screen flex-shrink-0 snap-center flex flex-col space-y-5 items-center justify-center py-20 md:px-20 h-screen'>
+    <div className='w-screen flex-shrink-0 snap-center flex flex-col space-y-5 items-center justify-center py-20 px-8 md:px-20 h-screen'>
         <Image src={companyLogo} alt='' width={200} height={200} className='h-32 w-32 object-center object-contain xl:w-[200px] xl:h-[200px]'/>
         <div className='w-full px-5'>
             <h4 className='text-lg md:text-4xl font-bold'>{title}</h4>
