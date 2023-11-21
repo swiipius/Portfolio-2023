@@ -37,7 +37,7 @@ function Skills({}: Props) {
             <Skill level='65%' logo='/images/Logo/linux.svg' name='Linux' />
             <Skill level='50%' logo='/images/Logo/mqtt.svg' name='MQTT' />
             <Skill level='10%' logo='/images/Logo/thread.svg' name='Thread' />
-            <Skill level='45%' logo='/images/Logo/c++.svg' name='C++' />
+            <Skill level='65%' logo='/images/Logo/c++.svg' name='C++' />
             <Skill level='10%' logo='/images/Logo/matter.svg' css='bg-white rounded-xl object-contain' name='Matter' /> 
             <Skill level='20%' logo='/images/Logo/docker.svg' name='Docker' />
             <Skill level='60%' logo='/images/Logo/react.svg' name='React' />
