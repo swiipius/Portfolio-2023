@@ -33,6 +33,7 @@ function Skills({}: Props) {
             <Skill level='70%' logo='/images/Logo/ros.svg' name='ROS 2' />
             <Skill level='70%' logo='/images/Logo/css.svg' name='CSS' />
             <Skill level='65%' logo='/images/Logo/c.svg' name='Ce' />
+            <Skill level='30%' logo='/images/Logo/STM.svg' name='STM' />
             <Skill level='65%' logo='/images/Logo/html.svg' name='HTML' />
             <Skill level='65%' logo='/images/Logo/linux.svg' name='Linux' />
             <Skill level='50%' logo='/images/Logo/mqtt.svg' name='MQTT' />
