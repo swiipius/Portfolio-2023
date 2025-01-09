@@ -13,7 +13,7 @@ function Project({title, image, description, skills}: Props) {
     <div className='w-screen flex-shrink-0 snap-center flex flex-col space-y-5 items-center justify-center py-20 px-10 h-screen'>
         <Image src={image} alt='' width={500} height={500} className='max-h-36 md:max-h-52 object-contain' />
         <div className='space-y-5 px-0 md:px-10 max-w-6xl'>
-            <h4 className='md:text-4xl font-semibold text-center'>
+            <h4 className='text-lg font-semibold text-center'>
                 <span className='underline decoration-[#94160d]/50'>{title}</span>
             </h4>
 
@@ -29,7 +29,7 @@ function Project({title, image, description, skills}: Props) {
                 
             </div>
 
-            <p className='md:text-lg text-sm text-justify whitespace-pre-line'>
+            <p className='md:text-sm text-xs text-justify whitespace-pre-line'>
                 {description}
             </p>
             

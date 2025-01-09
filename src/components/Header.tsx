@@ -27,12 +27,6 @@ function Header({}: Props) {
           bgColor="transparent"
           target="_blank"
         />
-        <SocialIcon
-          url="https://www.figma.com/@swiipius"
-          fgColor="grey"
-          bgColor="transparent"
-          target="_blank"
-        />
       </motion.div>
 
       <Link href='#contact'>

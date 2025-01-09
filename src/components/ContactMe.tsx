@@ -35,7 +35,7 @@ function ContactMe({}: Props) {
 
                 <div className='flex items-center space-x-5 justify-center'>
                     <MapPinIcon className='text-[#94160d] h-7 w-7 animate-pulse'/>
-                    <p className='text-sm md:text-2xl'>Boulogne Billancourt</p>
+                    <p className='text-sm md:text-2xl'>Lyon</p>
                 </div>
             </div>
         </div>
