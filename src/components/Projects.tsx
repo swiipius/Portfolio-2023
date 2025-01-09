@@ -22,10 +22,16 @@ function Projects({}: Props) {
           <Carousel
             className="rounded-xl"
             transition={{ duration: 1 }}
+            placeholder={<div />}
+            onPointerEnterCapture={() => {}}
+            onPointerLeaveCapture={() => {}}
             prevArrow={({ handlePrev }) => (
               <IconButton
                 variant="text"
                 color="white"
+                placeholder={<span />}
+                onPointerEnterCapture={() => {}}
+                onPointerLeaveCapture={() => {}}
                 size="lg"
                 onClick={handlePrev}
                 className="!absolute top-3/4 md:top-2/4 left-1 md:left-4 -translate-y-2/4  flex items-center justify-center rounded-full"
@@ -50,6 +56,9 @@ function Projects({}: Props) {
               <IconButton
                 variant="text"
                 color="white"
+                placeholder={<span />}
+                onPointerEnterCapture={() => {}}
+                onPointerLeaveCapture={() => {}}
                 size="lg"
                 onClick={handleNext}
                 className="!absolute top-3/4 md:top-2/4 !right-1 md:right-4  -translate-y-2/4 flex items-center justify-center rounded-full"
